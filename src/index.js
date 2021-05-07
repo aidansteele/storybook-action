@@ -32,6 +32,9 @@ function setPercyBranchBuildInfo(pullRequestNumber) {
     let execOptions = {
       cwd: workingDir,
       windowsVerbatimArguments: true,
+      listeners: {
+        debug: console.log 
+      }
     };
 
     // Set the CI builds user agent
